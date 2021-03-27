@@ -16,3 +16,5 @@ jobs:
 
       - name: Run tests
         run: mvn test
+        env:
+          ENCRYPT_KEY: "{{ secrets.VAULT_PASSWORD }}"

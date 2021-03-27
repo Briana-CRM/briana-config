@@ -13,5 +13,5 @@ spring:
           enabled: false
         bootstrap: true
 encrypt:
-  key: ${ENCRYPT_KEY:secret}
+  key: ${ENCRYPT_KEY}
 
