@@ -12,5 +12,5 @@ spring:
         encrypt:
           enabled: false
 encrypt:
-  key: ${ENCRYPT_KEY}
+  key: ${ENCRYPT_KEY:secret}
 
