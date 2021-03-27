@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: briana-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/briana-crm/briana-cfstorage
+          searchPaths: '{application}'
+        encrypt:
+          enabled: false
+encrypt:
+  key: ${ENCRYPT_KEY:secret}
+
